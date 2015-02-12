@@ -58,5 +58,13 @@
          <li id="item2">second item before js</li>
      </ul>
     <input type="button" value="alter list" onclick="alterlist()" />
+     <script>
+         document.getElementById("item1").innerHTML = "";
+         var array = ["first ", "item ", "has ", "been ", "altered"];
+         for (x in array)
+         {
+             document.getElementById("item1").innerHTML = document.getElementById("item1").innerHTML + array[x];
+         }
+     </script>
  </body>
 </html>
