@@ -60,7 +60,8 @@
     <input type="button" value="alter list" onclick="alterlist()" />
      <script>
          document.getElementById("item1").innerHTML = "";
-         var array = ["first ", "item ", "has ", "been ", "altered"];
+         /* this line should not be a conflict between branch1 and master */
+         var array = ["first ", "item ", "has ", "been ", "altered ", "by ", "branch1"];
          for (x in array)
          {
              document.getElementById("item1").innerHTML = document.getElementById("item1").innerHTML + array[x];
