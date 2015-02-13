@@ -1,0 +1,71 @@
+﻿<html>
+ <head>
+  <title> 事件</title>
+     <style type="text/css">
+         .listarea
+         {
+             border: solid;
+             border-color:#000000;
+             border-width:2px;
+             background-color:#8fff00;
+         }
+     </style>
+     <script src="Script1.js"></script>
+  <script type="text/javascript">
+      function count()
+      {
+          var d = 0;
+          //获取第一个输入框的值
+          var a = document.getElementById("txt1").value;
+          //获取第二个输入框的值
+          var b = document.getElementById("txt2").value;
+          //获取选择框的值
+          var c = document.getElementById("select").value;
+          //获取通过下拉框来选择的值来改变加减乘除的运算法则
+          switch (c)
+          {
+              case '+':
+                  d = a*1 + b*1;
+                  break;
+              case '-':
+                  d = a - b;
+                  break;
+              case '*':
+                  d = a * b;
+                  break;
+              case '/':
+                  d = a / b;
+                  break;
+          }
+          document.getElementById("fruit").value = d;
+    //设置结果输入框的值
+   }
+  </script>
+ </head>
+ <body>
+   <input type='text' id='txt1' />
+   <select id='select'>
+		<option value='+'>+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+   </select>
+   <input type='text' id='txt2' />
+   <input type='button' value=' = ' onclick="count()"/> <!--通过 = 按钮来调用创建的函数，得到结果-->
+   <input type='text' id='fruit'/>
+     <ul class="listarea">
+         <li id='item1'>first item before js</li>
+         <li id="item2">second item before js</li>
+     </ul>
+    <input type="button" value="alter list" onclick="alterlist()" />
+     <script>
+         document.getElementById("item1").innerHTML = "";
+         /* this line should not be a conflict between branch1 and master */
+         var array = ["first ", "item ", "has ", "been ", "altered ", "by ", "branch1"];
+         for (x in array)
+         {
+             document.getElementById("item1").innerHTML = document.getElementById("item1").innerHTML + array[x];
+         }
+     </script>
+ </body>
+</html>
