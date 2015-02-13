@@ -1,2 +1,5 @@
 # hello-world
-for practise
+=============
+Hello world. 
+
+Programming is awesome. Right now I am learning java script, html and css.
