@@ -1,0 +1,659 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TryTable</title>
+    <style>
+        .firstDiv{
+            background-color: #77963f;
+            width:1000px;
+        }
+        .tableAll{
+            width:1000px;
+            background-color: #c4c4c4;
+        }
+        .tableHead{
+            width:inherit;
+            background-color: #aaaaaa;
+        }
+        .tableBody{
+            width:inherit;
+            background-color: #8b8b8b;
+        }
+        table{
+            width: auto;
+            height: 600px;
+            border:1px solid black;
+            border-collapse: collapse;
+            overflow-y: scroll;
+        }
+        tbody tr:nth-child(2n+1){background-color:#687c8e}
+        tbody tr:nth-child(2n){background-color:#97835f}
+    </style>
+</head>
+<body>
+    <div class="firstDiv">
+        <div>
+            table head
+        </div>
+        <div>
+            table body
+        </div>
+    </div>
+    <div class="tableAll">
+        <table>
+            <thead>
+                <tr>
+                    <th>col1</th>
+                    <th>col2</th>
+                    <th>col3</th>
+                    <th>col4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+                <tr>
+                    <td>col1 data col1 data</td>
+                    <td>col2 data col2 data</td>
+                    <td>col3 data col3 data</td>
+                    <td>col4 data col4 data</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
