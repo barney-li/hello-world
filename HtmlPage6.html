@@ -13,12 +13,142 @@
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        table {
+            width:80%;
+        }
+        .boxtest {
+            border-style:solid;
+            border-width:1px;
+            border-color:black;
+            width:500px;
+            height:500px;
+            text-align:center;
+            margin-bottom:10px;
+            border-radius:5px 5px;
+            padding-top:100px;
+        }
+        .innerbox {
+            margin:0 auto;
+            border-style:solid;
+            border-width:1px;
+            border-color:black;
+            width:100px;
+            height:100px;
+            text-align:center;
+            border-radius:5px 5px;
+        }
+        .tableBox {
+            margin:0 auto;
+            border-style:solid;
+            border-width:1px;
+            border-color:black;
+            width:500px;
+            height:500px;
+            overflow-x:scroll;
+            overflow-y:scroll;
+            position:relative;
+        }
+        
+    </style>
+    
+
 </head>
 <body>
+    <div class="boxtest">
+        <div class="innerbox">inner box</div>
+    </div>
+    <div class="tableBox">
+        
+        <table class="table-condensed table-hover">
+            <thead>
+                <tr>
+                    <th>colume1</th>
+                    <th>colume2</th>
+                    <th>colume3</th>
+                    <th>colume4</th>
+                    <th>colume5</th>
+                    <th>colume6</th>
+                    <th>colume7</th>
+                    <th>colume8</th>
+                    <th>colume9</th>
+                    <th>colume10</th>
+                    <th>colume11</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+                <tr>
+                    <td>colume1 data</td>
+                    <td>colume2 data</td>
+                    <td>colume3 data</td>
+                    <td>colume4 data</td>
+                    <td>colume5 data</td>
+                    <td>colume6 data</td>
+                    <td>colume7 data</td>
+                    <td>colume8 data</td>
+                    <td>colume9 data</td>
+                    <td>colume10 data</td>
+                    <td>colume11 data</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+    var headHtml = "";
+    var bodyHtml = "<tr>\
+                            <td>colume1 data</td>\
+                            <td>colume2 data</td>\
+                            <td>colume3 data</td>\
+                            <td>colume4 data</td>\
+                            <td>colume5 data</td>\
+                            <td>colume6 data</td>\
+                            <td>colume7 data</td>\
+                            <td>colume8 data</td>\
+                            <td>colume9 data</td>\
+                            <td>colume10 data</td>\
+                            <td>colume11 data</td>\
+                        </tr>";
+    for (var i = 0; i < 100; i++) {
+        var body = document.getElementById("tableData");
+        var originHtml = body.innerHTML;
+        document.getElementById("tableData").innerHTML = document.getElementById("tableData").innerHTML + bodyHtml;
+    }
+    </script>
     <h1>你好，世界！</h1>
+    <h1>Hello, world!</h1>
+    <p>normal paragraph</p>
+    <p class="lead">paragraph with <abbr title="class lead in Bootstrap">lead</abbr></p>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <div class="bs-docs-example">
+        <table class="table table-condensed table-hover">
+            
+            <tr class="active"><td>active</td></tr>
+            <tr class="success"><td>success</td></tr>
+            <tr class="warning"><td>warning</td></tr>
+            <tr class="danger"><td>danger</td></tr>
+            <tr class="info"><td>info</td></tr>
+
+            <!-- On cells (`td` or `th`) -->
+            <tr>
+                <td class="active">active</td>
+                <td class="success">success</td>
+                <td class="warning">warning</td>
+                <td class="danger">danger</td>
+                <td class="info">info</td>
+            </tr>
+        </table>
+        <ul>
+            <li>
+                <i class="icon-off"></i>
+                <i class="icon-home"></i>
+                <i class="icon-print"></i>
+            </li>
+        </ul>
+    </div>
+    <i class="icon-search"></i>
+    <footer>this is footer</footer>
 </body>
 </html>
