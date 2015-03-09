@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<<<<<<< HEAD
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -657,3 +658,26 @@
     </div>
 </body>
 </html>
+=======
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>定时器</title>
+    <script type="text/javascript">
+        var attime;
+        function clock(){
+            var time=new Date();
+            attime = time.getHours().toString() +":"+ time.getMinutes().toString() +":"+ time.getSeconds().toString();
+            document.getElementById("clock").value = attime;
+  }
+        var i = setInterval(clock, 100);
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="clock" size="50" />
+        <input type="button" id="stop" value="stop" onclick="clearInterval(i)"/>
+    </form>
+</body>
+</html>
+>>>>>>> b426130b1c3ee7200ce4e137d854fadab7f42dd5
