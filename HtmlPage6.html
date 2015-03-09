@@ -14,9 +14,6 @@
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        table {
-            width:80%;
-        }
         .boxtest {
             border-style:solid;
             border-width:1px;
@@ -49,12 +46,51 @@
             overflow-y:scroll;
             position:relative;
         }
-        
+        .tableWrap {
+            margin:0px auto;
+            width:2000px;
+        }
+
+            .tableWrap table {
+                width:100%;
+                table-layout:fixed;
+            }
+        table tr td {
+            padding: 5px;
+            border: 1px solid #eee;
+            width: auto;
+            word-wrap: break-word;
+        }
+
+        .innerTableWrap {
+            height:800px;
+            overflow-y:scroll;
+        }
     </style>
     
 
 </head>
 <body>
+    <div class="tableWrap">
+        <table>
+            <tr>
+                <th>colume1</th>
+                <th>colume2</th>
+                <th>colume3</th>
+                <th>colume4</th>
+                <th>colume5</th>
+                <th>colume6</th>
+                <th>colume7</th>
+                <th>colume8</th>
+                <th>colume9</th>
+                <th>colume10</th>
+                <th>colume11</th>
+            </tr>
+        </table>
+        <div class="innerTableWrap">
+            <table id="tableData" class="table-hover"></table>
+        </div>
+    </div>
     <div class="boxtest">
         <div class="innerbox">inner box</div>
     </div>
@@ -76,13 +112,13 @@
                     <th>colume11</th>
                 </tr>
             </thead>
-            <tbody id="tableData">
+            <tbody id="tableData1">
                 <tr>
-                    <td>colume1 data</td>
-                    <td>colume2 data</td>
+                    <td>1</td>
+                    <td>colume2 data is very very long</td>
                     <td>colume3 data</td>
-                    <td>colume4 data</td>
-                    <td>colume5 data</td>
+                    <td>4</td>
+                    <td>5</td>
                     <td>colume6 data</td>
                     <td>colume7 data</td>
                     <td>colume8 data</td>
@@ -96,11 +132,11 @@
     <script type="text/javascript">
     var headHtml = "";
     var bodyHtml = "<tr>\
-                            <td>colume1 data</td>\
-                            <td>colume2 data</td>\
-                            <td>colume3 data</td>\
-                            <td>colume4 data</td>\
-                            <td>colume5 data</td>\
+                            <td>1</td>\
+                            <td>colume2 data is very very long</td>\
+                            <td>3</td>\
+                            <td>4</td>\
+                            <td>5</td>\
                             <td>colume6 data</td>\
                             <td>colume7 data</td>\
                             <td>colume8 data</td>\
