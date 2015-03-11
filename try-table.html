@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Test</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .tableWrap {
+            margin:10px 10px;
+            width:100%;
+        }
+
+            .tableWrap table {
+                width:2000px;
+                table-layout:fixed;
+            }
+        table tr td {
+            padding: 5px;
+            border: 1px solid #eee;
+            width: auto;
+            word-wrap: break-word;
+        }
+
+        .innerTableWrap {
+            width:2000px;
+            height:600px;
+            overflow-y:scroll;
+            overflow-x:hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="tableWrap">
+        <table>
+            <tr>
+                <th>colume1</th>
+                <th>colume2</th>
+                <th>colume3</th>
+                <th>colume4</th>
+                <th>colume5</th>
+                <th>colume6</th>
+                <th>colume7</th>
+                <th>colume8</th>
+                <th>colume9</th>
+                <th>colume10</th>
+                <th>colume11</th>
+            </tr>
+        </table>
+        <div class="innerTableWrap">
+            <table id="tableData" class="table-hover"></table>
+        </div>
+    </div>
+    <script type="text/javascript">
+    var headHtml = "";
+    var bodyHtml = "<tr>\
+                            <td>1</td>\
+                            <td>colume2 data is very very long</td>\
+                            <td>3</td>\
+                            <td>4</td>\
+                            <td>5</td>\
+                            <td>colume6 data</td>\
+                            <td>colume7 data</td>\
+                            <td>colume8 data</td>\
+                            <td>colume9 data</td>\
+                            <td>colume10 data</td>\
+                            <td>colume11 data</td>\
+                        </tr>";
+    for (var i = 0; i < 100; i++) {
+        var body = document.getElementById("tableData");
+        var originHtml = body.innerHTML;
+        document.getElementById("tableData").innerHTML = document.getElementById("tableData").innerHTML + bodyHtml;
+    }
+    </script>
+</body>
+</html>
